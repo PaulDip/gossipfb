@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @gossip.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @gossip.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_gossip_path(@gossip.user, @gossip) %> |
+<%= link_to 'Back', user_gossips_path(@gossip.user) %>
